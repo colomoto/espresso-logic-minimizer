@@ -4,7 +4,7 @@
 */
 
 #include "espresso.h"
-#include "strdup.h"
+#include <string.h>
 
 static bool line_length_error;
 static int lineno;
