@@ -36,6 +36,7 @@
 # Deployment directories
 build/
 bin/
+src/espresso
 
 # Dependencies
 node_modules/
