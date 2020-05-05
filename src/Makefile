@@ -2,13 +2,9 @@ SRC := $(wildcard *.c)
 
 OBJ := ${SRC:.c=.o}
 
-TARGETDIR := ../bin
-TARGET := $(TARGETDIR)/espresso
+TARGET := espresso
 
-all: prepare $(TARGET)
-
-prepare:
-	mkdir $(TARGETDIR)
+all: $(TARGET)
 
 $(TARGET): $(OBJ)
 	$(LINK.c) $(OBJ) -o $(TARGET)
